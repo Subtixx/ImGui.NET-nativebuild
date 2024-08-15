@@ -29,7 +29,7 @@ add_library(cimplot SHARED
     cimplot/implot/implot_demo.cpp
     cimplot/implot/implot_items.cpp)
 
-target_include_directories(cimplot PUBLIC cimgui/imgui)
+target_include_directories(cimplot PUBLIC cimgui/imgui cimgui)
 set_target_properties(cimplot PROPERTIES PREFIX "")
 
 
@@ -42,7 +42,7 @@ add_library(cimnodes SHARED
     cimnodes/cimnodes.cpp
     cimnodes/imnodes/imnodes.cpp)
 
-target_include_directories(cimnodes PUBLIC cimgui/imgui)
+target_include_directories(cimnodes PUBLIC cimgui/imgui cimgui)
 set_target_properties(cimnodes PROPERTIES PREFIX "")
 
 
@@ -55,5 +55,5 @@ add_library(cimguizmo SHARED
     cimguizmo/cimguizmo.cpp
     cimguizmo/ImGuizmo/ImGuizmo.cpp)
 
-target_include_directories(cimguizmo PUBLIC cimgui/imgui)
+target_include_directories(cimguizmo PUBLIC cimgui/imgui cimgui)
 set_target_properties(cimguizmo PROPERTIES PREFIX "")
